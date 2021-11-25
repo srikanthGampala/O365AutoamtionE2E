@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637510427015' stop='1637510442775'>
+    <name>Otlook Login Functionality validation</name>
+    <title>Otlook Login Functionality validation</title>
+    <test-cases>
+        <test-case start='1637510428184' status='passed' stop='1637510435963'>
+            <name>Outlook LoginFirstData</name>
+            <title>Outlook LoginFirstData</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637510435963' status='passed' stop='1637510442514'>
+            <name>Adding Manifest file to outlook</name>
+            <title>Adding Manifest file to outlook</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637510442514' status='pending' stop='1637510442515'>
+            <name>Validating Sentbox email header</name>
+            <title>Validating Sentbox email header</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
