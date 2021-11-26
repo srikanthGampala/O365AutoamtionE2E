@@ -1,5 +1,6 @@
 import { $, $$, browser, by, element } from "protractor"
 import { AddPluginPage } from "./pageObjects/AddPluginPage";
+import { informationworkerLoginPage } from "./pageObjects/informationworkerLoginPage";
 import {LoginPage} from "./pageObjects/LoginPage";
 import { SentboxPage } from "./pageObjects/SentboxPage";
 
@@ -8,6 +9,7 @@ var using= require('jasmine-data-provider');
 const LPage= new LoginPage();
 const AddinPage= new AddPluginPage();
 const SentPage= new SentboxPage();
+const EpicorLogin= new informationworkerLoginPage();
 
 describe("Otlook Login Functionality validation", function(){
     
@@ -58,16 +60,32 @@ describe("Otlook Login Functionality validation", function(){
          
 
     })
-    it("Adding Manifest file to outlook", async()=>{
+    xit("Adding Manifest file to outlook", async()=>{
         //validating heading of the page
         await AddinPage.ClickFirstEmail();
-        await AddinPage.ClickOnEllipse();
+        //await EpicorLogin.ClickOnEllipse();
         await AddinPage.ClickGetAddins();
         await browser.sleep(1000);
         await AddinPage.switchToFrame(1);
         await AddinPage.ClickMyAddins();
         await AddinPage.ClickCustomAddinDropDown();
         //await AddinPage.AddFromFile();
+    //    
+
+    })
+    it("Information worker Login screen validation", async()=>{
+        //validating heading of the page
+        await EpicorLogin.ClickFirstEmail();
+        await EpicorLogin.ClickQuote();
+        //await browser.sleep(1000);
+        await EpicorLogin.switchToFrame(1);
+        await EpicorLogin.ClickToggleBtn();
+        await EpicorLogin.ClickContinueBtn();
+        await EpicorLogin.EnterServerDetails(data.servername);
+        await EpicorLogin.ClickContinueBtn();
+        await EpicorLogin.EnterUserName(data.Uname);
+        await EpicorLogin.EnterPassword(data.Pwd)
+
     //    
 
     })

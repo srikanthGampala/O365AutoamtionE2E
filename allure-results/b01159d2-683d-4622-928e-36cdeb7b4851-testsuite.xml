@@ -1,0 +1,92 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637904561774' stop='1637904575477'>
+    <name>Otlook Login Functionality validation</name>
+    <title>Otlook Login Functionality validation</title>
+    <test-cases>
+        <test-case start='1637904562731' status='passed' stop='1637904570957'>
+            <name>Outlook LoginFirstData</name>
+            <title>Outlook LoginFirstData</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637904570958' status='passed' stop='1637904573910'>
+            <name>Validating Sentbox email header</name>
+            <title>Validating Sentbox email header</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637904573911' status='pending' stop='1637904573912'>
+            <name>Adding Manifest file to outlook</name>
+            <title>Adding Manifest file to outlook</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1637904573912' status='failed' stop='1637904575215'>
+            <name>Information worker Login screen validation</name>
+            <title>Information worker Login screen validation</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: no such frame
+                  (Session info: chrome=96.0.4664.45)
+                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+                System info: host: 'HYDNB207', ip: '192.168.29.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+                Driver info: driver.version: unknown</message>
+                <stack-trace>NoSuchFrameError: no such frame
+                  (Session info: chrome=96.0.4664.45)
+                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+                System info: host: 'HYDNB207', ip: '192.168.29.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+                Driver info: driver.version: unknown
+                    at Object.checkLegacyResponse (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\selenium-webdriver\lib\error.js:546:15)
+                    at parseHttpResponse (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\selenium-webdriver\lib\http.js:509:13)
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\selenium-webdriver\lib\http.js:441:30
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                From: Task: WebDriver.switchTo().frame(1)
+                    at thenableWebDriverProxy.schedule (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+                    at TargetLocator.frame (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\selenium-webdriver\lib\webdriver.js:1824:25)
+                    at AddPluginPage.&lt;anonymous> (C:\Users\admin\Documents\OutlookProtractorAutoamtion\MainBase\base\ProtractorBase.ts:89:34)
+                    at Generator.next (&lt;anonymous>)
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\JSFiles\MainBase\base\ProtractorBase.js:8:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (C:\Users\admin\Documents\OutlookProtractorAutoamtion\JSFiles\MainBase\base\ProtractorBase.js:4:12)
+                    at AddPluginPage.switchToFrame (C:\Users\admin\Documents\OutlookProtractorAutoamtion\JSFiles\MainBase\base\ProtractorBase.js:108:16)
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\outlookLoginSpec.ts:80:25
+                    at Generator.next (&lt;anonymous>)
+                From: Task: Run it("Information worker Login screen validation") in control flow
+                    at UserContext.&lt;anonymous> (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\jasminewd2\index.js:64:48
+                    at ControlFlow.emit (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\selenium-webdriver\lib\events.js:62:21)
+                    at ControlFlow.shutdown_ (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\selenium-webdriver\lib\promise.js:2599:53
+                From asynchronous test: 
+                Error
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\outlookLoginSpec.ts:76:5
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\jasmine-data-provider\src\index.js:37:22
+                    at Array.forEach (&lt;anonymous>)
+                    at C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\jasmine-data-provider\src\index.js:30:24
+                    at Suite.&lt;anonymous> (C:\Users\admin\Documents\OutlookProtractorAutoamtion\outlookLoginSpec.ts:39:5)
+                    at addSpecsToSuite (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\admin\Documents\OutlookProtractorAutoamtion\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (C:\Users\admin\Documents\OutlookProtractorAutoamtion\outlookLoginSpec.ts:14:1)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

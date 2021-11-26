@@ -1,4 +1,4 @@
-import { browser, ElementFinder, ProtractorExpectedConditions } from "protractor";
+import { browser, by, element, ElementFinder, ProtractorExpectedConditions } from "protractor";
 import { protractor } from "protractor/built/ptor";
 import { text } from "stream/consumers";
 
@@ -86,6 +86,7 @@ export class ProtractorBase {
     }
 
     public async switchToFrame(frameNumber: number){
+        browser.wait(this.ec.presenceOf(element(by.tagName("iframe"))), 5000);
         await browser.switchTo().frame(frameNumber);
 
     }

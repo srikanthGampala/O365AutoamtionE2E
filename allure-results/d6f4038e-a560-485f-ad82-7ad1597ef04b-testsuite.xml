@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637861664069' stop='1637861679812'>
+    <name>Otlook Login Functionality validation</name>
+    <title>Otlook Login Functionality validation</title>
+    <test-cases>
+        <test-case start='1637861664825' status='passed' stop='1637861672527'>
+            <name>Outlook LoginFirstData</name>
+            <title>Outlook LoginFirstData</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637861672527' status='passed' stop='1637861675977'>
+            <name>Validating Sentbox email header</name>
+            <title>Validating Sentbox email header</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637861675978' status='passed' stop='1637861679671'>
+            <name>Adding Manifest file to outlook</name>
+            <title>Adding Manifest file to outlook</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
